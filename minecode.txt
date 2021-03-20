@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/*PRAJWAL RAJPUT */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+
+<h3>PRAJWAL RAJPUT</h3>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'contact')">contact</button>
+  <button class="tablinks" onclick="openCity(event, 'quotes')">quotes</button>
+  <button class="tablinks" onclick="openCity(event, 'about')">about</button>
+</div>
+
+<div id="contact" class="tabcontent">
+  
+
+<a href="https://www.instagram.com/prajwalrajput844"><b><i>INSTAGRAM</i></b> <img scr="insata.png"></a> </br>
+ <a href="https://www.facebook.com/prajwalrajput844"><b>FACEBOOK</b><img scr="facebook.png"></a></br>
+<a href="https://wa.me/8449934085"><b>Whatsapp</b></a>
+
+</div>
+
+<div id="quotes" class="tabcontent">
+
+<p><u><b>some quotes on life</b></u></p>
+<p>"I always like walking in the rain, so no one can see me crying."</p>
+<p>"The greatest glory in living lies not in never falling, but in rising every time we fall." - ...</p>
+<p>"The way to get started is to quit talking and begin doing." - ...</p>
+<p>"Your time is limited, so don't waste it living someone else's life. ...</p>
+<p>"Spread love everywhere you go. Let no one ever come to you without leaving happier." </p>
+<p>"When you reach the end of your rope, tie a knot in it and hang on." </p>
+<p>"Always remember that you are absolutely unique. Just like everyone else." </p>
+<p>"Don't judge each day by the harvest you reap but by the seeds that you plant." </p>
+<p>"The future belongs to those who believe in the beauty of their dreams." </p>
+<p>"Tell me and I forget. Teach me and I remember. Involve me and I learn." </p>
+<p>"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." </p>
+<p>"It is during our darkest moments that we must focus to see the light." </p>
+<p>Only a life lived for others is a life worthwhile." </p>
+<p>"The purpose of our lives is to be happy." </p>
+<p>"Life is what happens when you're busy making other plans."</p>
+<p>"You only live once, but if you do it right, once is enough."</p>
+<p>"Live in the sunshine, swim the sea, drink the wild air."</p>
+
+<h2>........................................THANKING YOU..........................................<h2>
+ 
+</div>
+
+<div id="about" class="tabcontent">
+  <p><b>👑ठाकुर प्रज्वल राजपूत👑</b></p>
+<p>21+</p>
+<p>🍂🍃Falling for you 🍂🍃</p>
+<p>Simple but significant</p>
+<p>Risk taker. Adventurer.</p>
+<p>Dob:- 22nov 🎂</p>
+<p>6 is my height but my attitude is 6’1.</p>
+<p>❤️🖤❤️🖤</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
